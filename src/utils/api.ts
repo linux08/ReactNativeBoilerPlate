@@ -39,7 +39,7 @@ interface user {
   password: string;
 }
 
-export const login = async (data:user) => {
+export const login = async (data: user) => {
   try {
     return await axios.post('/login', data);
   } catch (err) {

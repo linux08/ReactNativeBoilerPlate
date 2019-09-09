@@ -1,6 +1,6 @@
-import { Platform, Dimensions } from 'react-native';
+import {Platform, Dimensions} from 'react-native';
 
-const { height } = Dimensions.get('window');
+const {height} = Dimensions.get('window');
 
 export const isAndroid = Platform.OS === 'android';
 
