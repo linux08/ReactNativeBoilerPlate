@@ -1,6 +1,8 @@
 {
   "name": "MyReactNativeBoilerPlate",
   "version": "0.0.1",
+  "description": "React Native boiler plate",
+  "author": "David Abimbola <abimbola130@gmail.com>",
   "private": true,
   "scripts": {
     "start": "react-native start",
@@ -18,9 +20,23 @@
     "postinstall": "sed -i '' 's/#import <RCTAnimation\\/RCTValueAnimatedNode.h>/#import \"RCTValueAnimatedNode.h\"/' ./node_modules/react-native/Libraries/NativeAnimation/RCTNativeAnimatedNodesManager.h",
     "clear": "watchman watch-del-all && rm -rf node_modules/ && yarn cache clean && yarn install && yarn start -- --reset-cache"
   },
+  "keywords": [
+    "react-native-boilerplate",
+    "redux",
+    "react-native",
+    "react-navigation"
+  ],
   "dependencies": {
+    "@react-native-community/async-storage": "^1.6.1",
+    "axios": "^0.19.0",
     "react": "16.8.6",
-    "react-native": "0.60.5"
+    "react-native": "0.60.5",
+    "react-native-gesture-handler": "^1.4.1",
+    "react-navigation": "^4.0.2",
+    "react-redux": "^7.1.1",
+    "redux": "^4.0.4",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.0",
