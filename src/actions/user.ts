@@ -1,5 +1,5 @@
 import * as types from './actionTypes';
-import { login } from '../src/utils/api';
+import { login } from '../utils/api';
 
 export const loading = bool => ({
   type: types.LOGIN_IS_LOADING,
@@ -21,8 +21,8 @@ export const LogOut = () => ({
   type: types.LOGOUT,
 });
 
-export const loginUser = () => dispatch =>
-   login()
+export const loginUser = () => dispatch => data => 
+   login(data)
     .then(resp => {
       if (resp.status === 200) {
         dispatch(loading(false));

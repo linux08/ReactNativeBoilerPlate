@@ -1,7 +1,7 @@
 import AsyncStorage from '@react-native-community/async-storage';
 import { combineReducers } from 'redux';
 
-import userInfo from './user';
+import user from './user';
 import * as types from '../actions/actionTypes';
 
 const AppReducer = combineReducers({

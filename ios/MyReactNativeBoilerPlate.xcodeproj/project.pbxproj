@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* MyReactNativeBoilerPlateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* MyReactNativeBoilerPlateTests.m */; };
-		041638C1232787790029FAA3 /* libRNGestureHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 041638BE2327873B0029FAA3 /* libRNGestureHandler.a */; };
 		0D57BA6CD580F12366D296A9 /* libPods-MyReactNativeBoilerPlate-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0624AD1814BFDF85952F6BFA /* libPods-MyReactNativeBoilerPlate-tvOSTests.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
@@ -98,7 +97,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				041638C1232787790029FAA3 /* libRNGestureHandler.a in Frameworks */,
 				F5D5F30642EE325CAFCE0DB9 /* libPods-MyReactNativeBoilerPlate.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
