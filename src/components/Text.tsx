@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, StyleSheet } from 'react-native';
-import PropTypes from 'prop-types';
+import PropTypes, { oneOfType } from 'prop-types';
 import { isAndroid } from '../utils/helpers';
 
 const styles = StyleSheet.create({
@@ -9,7 +9,13 @@ const styles = StyleSheet.create({
   },
 });
 
-const TextN = ({ onPress, style, children }) => (
+interface Props {
+  style: any;
+  children : any,
+  onPress: () =>{},
+}
+
+const TextN : React.FC<Props> = ({ onPress, style, children }) => (
   <Text onPress={onPress} style={[styles.text, style]}>
     {children}
   </Text>

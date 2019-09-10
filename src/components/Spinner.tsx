@@ -12,24 +12,23 @@ const styles = StyleSheet.create({
 });
 
 
-interface SpinnerProps {
-  size: number | 'small' | 'large';
-  color: string;
+
+interface Props {
+  size?:  number | "small" | "large"
+  color?: string;
 }
-// : React.FC<SpinnerProps>
-const Spinner  = ({ size, color }) => (
+const Spinner: React.FC<Props>  = ({ size, color }) => (
   <View style={styles.spinnerStyle}>
-    <ActivityIndicator size={size || 'large'} color={color || 'yellow'} />
+    <ActivityIndicator size={size} color={color || 'yellow'} />
   </View>
 );
 
 Spinner.defaultProps = {
-  size: 'large',
+  size: "large",
   color: 'yellow',
 };
 
 Spinner.propTypes = {
-  size: PropTypes.string,
   color: PropTypes.string,
 };
 

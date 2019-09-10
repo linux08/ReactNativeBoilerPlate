@@ -1,11 +1,16 @@
 import * as types from '../actions/actionTypes';
 
+
+
+interface User {
+  user: any;
+  loading: boolean;
+  error: string
+}
+
+type State = User;
 const userInfoReducer = (
-  state = {
-    user: {},
-    loading: true,
-    error: null,
-  },
+  state:State,
   action,
 ) => {
   switch (action.type) {

@@ -10,34 +10,27 @@
 
 import React from 'react';
 import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
   StatusBar,
-  YellowBox
+  // YellowBox
 } from 'react-native';
 
 
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
-import { RootNavigator } from './src/navigator/index.ts';
-import ErrorHandler from './src/components/ErrorHandler';
-import Loading from './src/components/Loading';
+import { RootNavigator } from './src/navigator/index';
 import NavigationService from './src/services/NavigationService';
 import { store, persistor } from './src/store';
-
-
- YellowBox.ignoreWarnings([
-      'Setting a timer',
-      'Warning',
-      'Remote',
-      'Unrecognized WebSocket connection option(s) `agent`, `perMessageDeflate`, `pfx`, `key`, `passphrase`, `cert`, `ca`, `ciphers`, `rejectUnauthorized`. Did you mean to put these under `headers`?',
-    ]);
+import ErrorHandler from './src/components/ErrorHandler';
+import Loading from './src/components/Loading';
 
 
 
+//  YellowBox.ignoreWarnings([
+//       'Setting a timer',
+//       'Warning',
+//       'Remote',
+//       'Unrecognized WebSocket connection option(s) `agent`, `perMessageDeflate`, `pfx`, `key`, `passphrase`, `cert`, `ca`, `ciphers`, `rejectUnauthorized`. Did you mean to put these under `headers`?',
+//     ]);
 
 const App = () => {
 

@@ -9,7 +9,7 @@ const AppReducer = combineReducers({
 });
 
 // Clean state when user logs out
-export const rootReducer = (state = {}, action) => {
+export const rootReducer = (state:any = {}, action) => {
   if (action.type === types.LOGOUT) {
     AsyncStorage.removeItem('persist:root');
     state = undefined;
