@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Image, StyleSheet } from 'react-native';
+import { View,  StyleSheet } from 'react-native';
 import PropTypes from 'prop-types';
 
 import Text from './Text';
@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   textStyle: {
-    color: WHITE,
+    color: 'white',
     fontSize: 15,
   },
   innerContainer: {

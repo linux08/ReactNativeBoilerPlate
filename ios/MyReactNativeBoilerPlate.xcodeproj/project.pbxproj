@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* MyReactNativeBoilerPlateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* MyReactNativeBoilerPlateTests.m */; };
+		041638C1232787790029FAA3 /* libRNGestureHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 041638BE2327873B0029FAA3 /* libRNGestureHandler.a */; };
 		0D57BA6CD580F12366D296A9 /* libPods-MyReactNativeBoilerPlate-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0624AD1814BFDF85952F6BFA /* libPods-MyReactNativeBoilerPlate-tvOSTests.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
@@ -30,6 +31,20 @@
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = MyReactNativeBoilerPlate;
 		};
+		041638BD2327873B0029FAA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 041638B82327873B0029FAA3 /* RNGestureHandler.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RNGestureHandler;
+		};
+		041638BF2327873B0029FAA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 041638B82327873B0029FAA3 /* RNGestureHandler.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B5C32A36220C603B000FFB8D;
+			remoteInfo = "RNGestureHandler-tvOS";
+		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
@@ -44,6 +59,7 @@
 		00E356EE1AD99517003FC87E /* MyReactNativeBoilerPlateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyReactNativeBoilerPlateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* MyReactNativeBoilerPlateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyReactNativeBoilerPlateTests.m; sourceTree = "<group>"; };
+		041638B82327873B0029FAA3 /* RNGestureHandler.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNGestureHandler.xcodeproj; path = "../node_modules/react-native-gesture-handler/ios/RNGestureHandler.xcodeproj"; sourceTree = "<group>"; };
 		0624AD1814BFDF85952F6BFA /* libPods-MyReactNativeBoilerPlate-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyReactNativeBoilerPlate-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1176998D935AAA160B961A0D /* Pods-MyReactNativeBoilerPlate-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyReactNativeBoilerPlate-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-MyReactNativeBoilerPlate-tvOS/Pods-MyReactNativeBoilerPlate-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* MyReactNativeBoilerPlate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyReactNativeBoilerPlate.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041638C1232787790029FAA3 /* libRNGestureHandler.a in Frameworks */,
 				F5D5F30642EE325CAFCE0DB9 /* libPods-MyReactNativeBoilerPlate.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -122,6 +139,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		041638B92327873B0029FAA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				041638BE2327873B0029FAA3 /* libRNGestureHandler.a */,
+				041638C02327873B0029FAA3 /* libRNGestureHandler-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		13B07FAE1A68108700A75B9A /* MyReactNativeBoilerPlate */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +178,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				041638B82327873B0029FAA3 /* RNGestureHandler.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -194,7 +221,6 @@
 				6D2E573E2FE90615882A07E1 /* Pods-MyReactNativeBoilerPlateTests.debug.xcconfig */,
 				7D6BA66C66D9A5448BAFBDEC /* Pods-MyReactNativeBoilerPlateTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -305,7 +331,7 @@
 			};
 			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "MyReactNativeBoilerPlate" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -314,6 +340,12 @@
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 041638B92327873B0029FAA3 /* Products */;
+					ProjectRef = 041638B82327873B0029FAA3 /* RNGestureHandler.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* MyReactNativeBoilerPlate */,
@@ -323,6 +355,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		041638BE2327873B0029FAA3 /* libRNGestureHandler.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNGestureHandler.a;
+			remoteRef = 041638BD2327873B0029FAA3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		041638C02327873B0029FAA3 /* libRNGestureHandler-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRNGestureHandler-tvOS.a";
+			remoteRef = 041638BF2327873B0029FAA3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		00E356EC1AD99517003FC87E /* Resources */ = {

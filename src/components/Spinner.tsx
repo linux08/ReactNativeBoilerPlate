@@ -1,17 +1,23 @@
 import React from 'react';
-import { View, ActivityIndicator } from 'react-native';
+import { ActivityIndicator, View,StyleSheet } from 'react-native';
 import PropTypes from 'prop-types';
 
 
-const styles = {
+const styles = StyleSheet.create({
   spinnerStyle: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
   },
-};
+});
 
-const Spinner = ({ size, color }) => (
+
+interface SpinnerProps {
+  size: number | 'small' | 'large';
+  color: string;
+}
+// : React.FC<SpinnerProps>
+const Spinner  = ({ size, color }) => (
   <View style={styles.spinnerStyle}>
     <ActivityIndicator size={size || 'large'} color={color || 'yellow'} />
   </View>

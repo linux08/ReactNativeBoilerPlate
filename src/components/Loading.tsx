@@ -1,8 +1,7 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import {View, StyleSheet} from 'react-native';
 import Spinner from './Spinner';
 import Text from './Text';
-
 
 const styles = StyleSheet.create({
   container: {
@@ -20,12 +19,13 @@ const styles = StyleSheet.create({
   },
 });
 
-export default () => (
+const Loading: React.FC = () => (
   <View style={styles.container}>
     <Spinner occupy={false} />
     <View style={styles.innerContainer}>
-
       <Text style={styles.textStyle}> ReactNative BoilerPlate </Text>
     </View>
   </View>
 );
+
+export default Loading;
