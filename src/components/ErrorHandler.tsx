@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { View,  StyleSheet } from 'react-native';
-import PropTypes from 'prop-types';
-
 import Text from './Text';
+
 
 
 const styles = StyleSheet.create({
@@ -23,7 +22,10 @@ const styles = StyleSheet.create({
   },
 });
 
-export default class ErrorHandler extends Component {
+interface Props {}
+interface State {}
+
+export default class ErrorHandler extends Component<Props | State> {
   constructor(props) {
     super(props);
     this.state = { hasError: false, info: null };
@@ -52,7 +54,3 @@ export default class ErrorHandler extends Component {
     return children;
   }
 }
-
-ErrorHandler.propTypes = {
-  children: PropTypes.element.isRequired,
-};

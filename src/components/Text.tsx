@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
 interface Props {
   style: any;
   children : any,
-  onPress: () =>{},
+  onPress?: () =>{},
 }
 
 const TextN : React.FC<Props> = ({ onPress, style, children }) => (

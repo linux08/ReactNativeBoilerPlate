@@ -4,6 +4,7 @@
   "description": "React Native boiler plate",
   "author": "David Abimbola <abimbola130@gmail.com>",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "start": "react-native start",
     "test": "jest",
@@ -20,12 +21,6 @@
     "postinstall": "sed -i '' 's/#import <RCTAnimation\\/RCTValueAnimatedNode.h>/#import \"RCTValueAnimatedNode.h\"/' ./node_modules/react-native/Libraries/NativeAnimation/RCTNativeAnimatedNodesManager.h",
     "clear": "watchman watch-del-all && rm -rf node_modules/ && yarn cache clean && yarn install && yarn start -- --reset-cache"
   },
-  "keywords": [
-    "react-native-boilerplate",
-    "redux",
-    "react-native",
-    "react-navigation"
-  ],
   "dependencies": {
     "@react-native-community/async-storage": "^1.6.1",
     "axios": "^0.19.0",
@@ -82,8 +77,5 @@
       "js"
     ],
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$"
-  },
-  "setupFiles": [
-    "./__tests__/setup.js"
-  ]
+  }
 }
