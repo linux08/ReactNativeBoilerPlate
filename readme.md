@@ -6,8 +6,6 @@
 [![Axios](https://img.shields.io/badge/Axios-v0.19.0-blue.svg)](https://github.com/axios/axios)
 [![Redux Persist](https://img.shields.io/badge/Redux%20Persist-v5.10.0-blue.svg)](https://github.com/rt2zz/redux-persist)
 
-).
-
 ## Features
 
 - [Redux](http://redux.js.org/)
@@ -28,11 +26,16 @@
 1. Clone this repo, `git clone https://github.com/linux08/ReactNativeBoilerPlate.git` <your project name>`
 2. Go to project's root directory, `cd <your project name>`
 3. Open `package.json` and change the `name` property with your project name
-4. Open `app.json` and replace `'MyReactNativeBoilerPlate'` by your project name
-
+4. Open `app.json` and replace `'MyReactNativeBoilerPlate'` with your project name
 5. Run `yarn install` or `npm install` to install dependencies
+6. Run `react-native upgrade --legacy true` to generate new android and iOS folder
+7. Run `react-native-link`
+   -- Run `npm run android` to start on android
 
-6. Run `npm run android` to start on and `npm run ios` to start on iOS.
+- On iOS
+  1. cd into the ios folder
+  2. run `pod update`
+  3. cd into your root project directory then run `npm run ios`
 
 ## Contributing
 
